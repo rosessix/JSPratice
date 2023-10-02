@@ -7,7 +7,7 @@ const Tasks = [
         template: `function addNumbers(n1,n2) {
     // Place your code here!
 }`,
-        test: [5,5,10]
+        test: [5,3,8]
     },
     {
         description: `# Subtract two numbers. \nMake a function called \`subtractNumbers\` that take two paramterers, **n1** and **n2**.  \n\nThese number should be subtracted from each other and returned.`,
