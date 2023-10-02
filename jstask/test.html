@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/javascript/javascript.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <textarea id="editor">function add(a, b) { return a + b; }(5,3)</textarea>
+    <button onclick="runCode()">Run Code</button>
+    <p id="result"></p>
+
+    <script>
+        var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
+            mode: "javascript",
+            lineNumbers: true,
+        });
+
+        function runCode() {
+            var code = editor.getValue();
+            try {
+                var result = eval(`(${code})`);
+                document.getElementById("result").textContent = "Result: " + result;
+            } catch (error) {
+                document.getElementById("result").textContent = "Error: " + error.message;
+            }
+        }
+    </script>
+</body>
+</html>
