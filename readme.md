@@ -7,3 +7,4 @@ This is simply a collection of small tasks that my teacher forced me to do. *i a
 Good question.
 
 I've made [JSTask](https://github.com/rosessix/JSPratice/tree/main/jstask). JSTask is a piece of software to help junior developers pratice and become **the** best!
+

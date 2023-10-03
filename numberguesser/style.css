@@ -1,0 +1,24 @@
+body {
+    background-color: #202020;
+    color: white;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input, button {
+    padding: 0.5rem;
+    color: white;
+    background-color: #303030;
+    border: 2px solid #3b3b3b;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+button {
+    margin-top: 0.5rem;
+}
+
+input:hover {
+    filter: brightness(1.5);
+}
