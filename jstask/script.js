@@ -6,7 +6,7 @@ const Tasks = [
         name: "addNumbers() task",
         template: `function addNumbers(n1,n2) {
     // Place your code here!
-}`,
+}`, // The reason for this being weirdly indented is because of the multi-string being wrong with CodeMirror unless I do this.
         test: [5,3,8]
     },
     {
@@ -30,7 +30,6 @@ $(document).ready(() => {
     $('#sTask').html(``);
     setTimeout(() => {
         for (let i = 0; i < Tasks.length; i++) {
-            console.log('lol');
             $('#sTask').append(`
                 <option value="${i}">${Tasks[i].name}</option>
             `);
