@@ -1,5 +1,5 @@
 # What da hell is this?
-*Made by rosessiix©️*
+*Made by rosessix©️*
 
 This is simply a collection of small tasks that my teacher forced me to do. *i am currently crying, jk i love you andrás*
 
